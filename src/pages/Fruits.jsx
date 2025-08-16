@@ -3,10 +3,11 @@ import useSetData from "../hooks/useSetData"
 import Fruit from "../components/Fruit"
 import { useState, useRef } from "react"
 import Pagiantio from "../components/Pagination"
+import List from "../components/List"
 
 const Fruits = () => {
     const [currentPage, setCurrentPage] = useState(1)
-    const [postsPerPage, setPostsPerPage] = useState(10)
+    const postsPerPage = 10
 
     const [query, setQuery] = useState("")
     const input = useRef("")
@@ -27,7 +28,15 @@ const Fruits = () => {
              {fruits ? (
                 <div>
                     <input ref={input} type="text" onChange={e => handleChange(e)}/>
-                    {fruits.filter(fruit => fruit.name.toLowerCase().includes(query)).slice(firstPostIndex, lastPostIndex).map((fruit) => <Fruit key={fruit.id} fruit={fruit}/>)}
+
+                        {   
+                            <List data={fruits} 
+                            query={query} 
+                            firstPostIndex={firstPostIndex} 
+                            lastPostIndex={lastPostIndex} 
+                            functionComponent={(fruit) => <Fruit key={fruit.id} fruit={fruit}/>}/>
+                        }
+
                     <Pagiantio setCurrentPage={setCurrentPage} totalPosts={fruits.length} postPerPage={postsPerPage}/>
                 </div>
                 
