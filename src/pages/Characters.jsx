@@ -4,6 +4,8 @@ import Character from "../components/Character"
 import { useState, useRef } from "react"
 
 const Characters = () => {
+
+
     const [query, setQuery] = useState("")
     const input = useRef("")
 
@@ -18,7 +20,7 @@ const Characters = () => {
         <>
              {characters ? (
                 <div>
-                    <input ref={input} type="text" onChange={e => handleChange(e)}/>
+                    <input ref={input} type="text" value={query} onChange={e => handleChange(e)}/>
                     {characters.filter(character => character.name.includes(query)).map((character) => <Character key={character.id} character={character}/>)}
                 </div>
                 
