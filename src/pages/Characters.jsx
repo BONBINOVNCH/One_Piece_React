@@ -8,7 +8,7 @@ import filter from "../tools/filter"
 
 const Characters = () => {
     const [currentPage, setCurrentPage] = useState(1)
-    const postsPerPage = 10
+    const postsPerPage = 20
 
 
     const [query, setQuery] = useState("")
@@ -27,7 +27,7 @@ const Characters = () => {
     return(
         <>
              {characters ? (
-                <div>
+                <div className="all_characters">
                     <input ref={input} type="text" value={query} onChange={e => handleChange(e)}/>
                     {
                         <List data={characters} 
@@ -37,7 +37,7 @@ const Characters = () => {
                             functionComponent={(character) => <Character key={character.id} character={character}/>}/>
                     }
 
-                    <Pagiantio setCurrentPage={setCurrentPage} totalPosts={filter(characters, query).length} postPerPage={postsPerPage}/>
+                    <Pagiantio setCurrentPage={setCurrentPage} totalPosts={filter(characters, query, "name").length} postPerPage={postsPerPage}/>
                 </div>
                 
             ) : (

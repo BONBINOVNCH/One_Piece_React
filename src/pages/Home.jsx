@@ -1,4 +1,5 @@
 import hero from "/img/one-piece-1920x1080.jpg"
+import MainCharacters from "../components/MainCharacters"
 
 const Home = () => {
     return(
@@ -21,7 +22,9 @@ const Home = () => {
         <div><strong>Year:</strong><br /><span>1999</span></div>
       </div>
     </div>
+    
   </section>
+  <MainCharacters/>
         </>
     )
 }

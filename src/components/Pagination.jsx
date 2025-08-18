@@ -7,7 +7,7 @@ for(let i = 1; i <= Math.ceil(totalPosts/postPerPage); i++) {
     pages.push(i)
 }
     return(
-        <PaginationUi count={pages.length} page={currentPage} onChange={(event, value) => setCurrentPage(value)} />
+        <PaginationUi className='pagiantion' color="primary" count={pages.length} page={currentPage}  shape="rounded" onChange={(event, value) => setCurrentPage(value)} />
     )
 }
 

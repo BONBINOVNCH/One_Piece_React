@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Header from "./components/Header";
 import Fruits from "./pages/Fruits";
 import Characters from "./pages/Characters";
+import MainCharacters from "./components/MainCharacters";
 
 function App() {
 
@@ -14,10 +15,11 @@ function App() {
 
           <Route path="/" element={<Header/>}>
             <Route path="/" index element={<Home/>}/>
+
+            <Route path="maincharacters" element={<MainCharacters/>}/>
+            <Route path="characters" element={<Characters/>}/>
             <Route path="fruits" index element={<Fruits/>}/>
-            <Route path="characters" index element={<Characters/>}/>
           </Route>
-          
         </Routes>
       </BrowserRouter>
     </>

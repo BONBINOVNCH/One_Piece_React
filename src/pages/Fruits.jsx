@@ -38,7 +38,7 @@ const Fruits = () => {
                             functionComponent={(fruit) => <Fruit key={fruit.id} fruit={fruit}/>}/>
                         }
 
-                    <Pagiantio currentPage={currentPage} setCurrentPage={setCurrentPage} totalPosts={filter(fruits, query).length} postPerPage={postsPerPage}/>
+                    <Pagiantio currentPage={currentPage} setCurrentPage={setCurrentPage} totalPosts={filter(fruits, query, "name").length} postPerPage={postsPerPage}/>
                 </div>
                 
             ) : (

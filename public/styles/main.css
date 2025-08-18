@@ -10,6 +10,8 @@ body {
   color: #fff;
   background-image: url("../img/AnOnePieceWallpaperHDJpg.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .header {
@@ -90,3 +92,101 @@ body {
     border-radius: 10px;
     margin-top: -10px;
 }
+
+.maincharacters{
+    /* background: rgba(0,0,0,0.6); */
+}
+
+.maincharacters_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maincharacters_title {
+    flex-grow: 1;
+    font-size: 60px;
+    padding: 40px;
+    background: #8B0E23;
+background: linear-gradient(90deg, rgba(139, 14, 35, 1) 48%, rgba(139, 14, 35, 0) 90%);
+}
+
+.maincharacters_img{
+    max-width: 37%;
+    flex-grow: 1;
+    border-radius: 40px;
+    margin: 40px;
+}
+
+.mariens {
+    text-align: end;
+}
+
+.mariens .maincharacters_title {
+    background: #8B0E23;
+    background: linear-gradient(270deg,rgba(139, 14, 35, 1) 48%, rgba(139, 14, 35, 0) 90%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.all_characters{
+    background: rgba(0,0,0,0.6);
+
+}
+
+.charecters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.character-card {
+  width: 280px;
+  background: #1e1e1e;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+.character-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+.character-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.character-info {
+  padding: 15px;
+}
+
+.character-info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #e8b923;
+}
+
+.character-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.character-info strong {
+  color: #ffcc00;
+}
+
+.pagination li{
+    background-color: #8B0E23;
+}
+
