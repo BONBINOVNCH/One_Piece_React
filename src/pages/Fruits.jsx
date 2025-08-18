@@ -4,6 +4,7 @@ import Fruit from "../components/Fruit"
 import { useState, useRef } from "react"
 import Pagiantio from "../components/Pagination"
 import List from "../components/List"
+import filter from "../tools/filter"
 
 const Fruits = () => {
     const [currentPage, setCurrentPage] = useState(1)
@@ -37,7 +38,7 @@ const Fruits = () => {
                             functionComponent={(fruit) => <Fruit key={fruit.id} fruit={fruit}/>}/>
                         }
 
-                    <Pagiantio setCurrentPage={setCurrentPage} totalPosts={fruits.length} postPerPage={postsPerPage}/>
+                    <Pagiantio currentPage={currentPage} setCurrentPage={setCurrentPage} totalPosts={filter(fruits, query).length} postPerPage={postsPerPage}/>
                 </div>
                 
             ) : (

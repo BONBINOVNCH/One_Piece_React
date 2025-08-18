@@ -4,6 +4,7 @@ import Character from "../components/Character"
 import List from "../components/List"
 import Pagiantio from "../components/Pagination"
 import { useState, useRef } from "react"
+import filter from "../tools/filter"
 
 const Characters = () => {
     const [currentPage, setCurrentPage] = useState(1)
@@ -36,7 +37,7 @@ const Characters = () => {
                             functionComponent={(character) => <Character key={character.id} character={character}/>}/>
                     }
 
-                    <Pagiantio setCurrentPage={setCurrentPage} totalPosts={characters.length} postPerPage={postsPerPage}/>
+                    <Pagiantio setCurrentPage={setCurrentPage} totalPosts={filter(characters, query).length} postPerPage={postsPerPage}/>
                 </div>
                 
             ) : (
