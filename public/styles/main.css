@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #111;
+  color: #fff;
+  background-image: url("../img/AnOnePieceWallpaperHDJpg.jpg");
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8b0e23;
+  padding: 15px 40px;
+}
+
+.header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 12px;
+  transition: 0.3s;
+}
+
+.nav li.active a,
+.nav a:hover {
+  background: #e8b923;
+  border-radius: 5px;
+  color: #000;
+}
+
+
+.hero {
+  background: rgba(0,0,0,0.6);
+  padding: 60px;
+  text-align: left;
+  display: flex;
+  margin: 60px 0px 60px 0px;
+  flex-wrap: wrap;
+}
+
+.hero-img img{
+    border-radius: 40px;
+    width: 100%;
+
+}
+
+.hero-img{
+    flex: 1 1 auto;
+    width: 250px;
+}
+
+.hero-text {
+    text-align: center;
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info span {
+    background-color: #8b0e23;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
