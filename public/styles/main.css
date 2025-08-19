@@ -190,3 +190,24 @@ a {
     background-color: #8B0E23;
 }
 
+.MuiPagination-ul{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.MuiPagination-ul li{
+
+}
+
+.MuiPagination-ul li > div, .MuiPagination-ul li > button {
+  height: 32px;
+  background-color: #8B0E23;
+height: 100%;
+margin: 10px;
+color: white;
+  height: 32px;
+}
+.MuiPagination-ul li:hover > div, .MuiPagination-ul li:hover > button {
+  background-color: #680b1a;
+}
