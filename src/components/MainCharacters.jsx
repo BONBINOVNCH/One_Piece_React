@@ -1,5 +1,5 @@
 import pirates from "/img/pirates.jpg"
-import mariens from "/img/mariens.webp"
+import mariens from "/img/Fruits.webp"
 import { Link } from "react-router"
 
 function MainCharacters() {
