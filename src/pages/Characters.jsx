@@ -28,7 +28,11 @@ const Characters = () => {
         <>
              {characters ? (
                 <div className="all_characters">
-                    <input ref={input} type="text" value={query} onChange={e => handleChange(e)}/>
+                    <div className="input_block">
+                        <h4 className="input_title">ім'я персонажа: </h4>
+                        <input ref={input} type="text" value={query} onChange={e => handleChange(e)}/>
+                    </div>
+                    
                     {
                         <List data={characters} 
                             query={query} 

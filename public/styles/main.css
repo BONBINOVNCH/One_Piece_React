@@ -211,3 +211,20 @@ color: white;
 .MuiPagination-ul li:hover > div, .MuiPagination-ul li:hover > button {
   background-color: #680b1a;
 }
+
+input{
+  background-color: #1e1e1e;
+  color: white;
+  margin: 10px;
+  padding: 5px;
+}
+
+.input_block {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.input_title {
+  color: #ffcc00;
+}
