@@ -162,8 +162,9 @@ a {
 }
 
 .character-image img {
-  width: 100%;
-  height: 200px;
+ display: block;
+ margin: auto;
+ height: 250px;
   object-fit: cover;
 }
 

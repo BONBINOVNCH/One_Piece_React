@@ -27,8 +27,11 @@ const Fruits = () => {
     return(
         <>
              {fruits ? (
-                <div>
-                    <input ref={input} type="text" onChange={e => handleChange(e)}/>
+                <div className="all_characters">
+                    <div className="input_block">
+                        <h4 className="input_title">ім'я Фрукта: </h4>
+                        <input ref={input} type="text" value={query} onChange={e => handleChange(e)}/>
+                    </div>
 
                         {   
                             <List data={fruits} 
