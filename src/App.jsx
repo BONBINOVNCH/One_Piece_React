@@ -16,7 +16,6 @@ function App() {
           <Route path="/" element={<Header/>}>
             <Route path="/" index element={<Home/>}/>
 
-            <Route path="maincharacters" element={<MainCharacters/>}/>
             <Route path="characters" element={<Characters/>}/>
             <Route path="fruits" index element={<Fruits/>}/>
           </Route>
