@@ -45,7 +45,7 @@ const Fruits = () => {
                 </div>
                 
             ) : (
-                <p>Loading...</p>
+                <p className="loading"><span>Loading...</span></p>
             )}
         </>
     )
