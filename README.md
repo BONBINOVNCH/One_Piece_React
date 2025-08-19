@@ -5,7 +5,7 @@
 -
 ## Installation
 
-"npm i" in console
+"npm i" and "npm run dev" in console
 
 ## Authors
 
